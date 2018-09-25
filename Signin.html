@@ -7,14 +7,15 @@
 </head>
 <body>
     <body>
- <div id="content">
+        <div id="contect">
+    <form method="post" action="signin.js">
         <p><label class="label_input">Username</label><input type="text" id="username" class="text_field"/></p>
         <p><label class="label_input">Password</label><input type="text" id="password" class="text_field"/></p>
   <div id="error_box"><br></div>
-  <br>
- 
-  <button onclick="fnsignin)" class="btn btn-info">Sign up</button>
-    </div>
+    <input type="button" id="btn_siginin" value="Sign up" onclick="signin();"/>
+     <input type="button" id="btn_cancel" value="Cancel" onclick="cancel();"/>
+            </form>
+        </div>
     </body>
 </body>
 </html>
