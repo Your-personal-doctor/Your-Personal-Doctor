@@ -1,3 +1,7 @@
+/* data:9/25/2018 
+author:jimmy 
+ sign in function
+*/
 function signin() {
     var oUname = document.getElementById("uname")
     var oUpass = document.getElementById("upass")
