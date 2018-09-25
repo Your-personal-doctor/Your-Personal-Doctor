@@ -1,4 +1,4 @@
-function fnsignin() {
+function signin() {
     var oUname = document.getElementById("uname")
     var oUpass = document.getElementById("upass")
     var oError = document.getElementById("error_box")
@@ -25,4 +25,7 @@ function fnsignin() {
         return;
  }
     window.alert("Success!")
+}
+function cancel(){
+    window.location.href="welcome.html";
 }
