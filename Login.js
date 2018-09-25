@@ -1,3 +1,7 @@
+/* data:9/25/2018 
+author:jimmy 
+login function
+*/
 function login() {
  
     var username = document.getElementById("username");
