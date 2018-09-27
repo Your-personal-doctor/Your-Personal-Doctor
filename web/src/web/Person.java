@@ -1,5 +1,9 @@
 package web;
-
+/*
+ autor:Ruifeng zhu
+ data:9/27/2018
+ for the person class
+*/
 
 public class Person {
     public String firstName;
