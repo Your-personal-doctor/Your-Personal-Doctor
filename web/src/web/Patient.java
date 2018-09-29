@@ -4,18 +4,25 @@ package web;
  * autor:Ruifeng zhu
  * Memebr class 
  */
-public class Member{
+public class Patient{
 private String account;
 private String password;
 private String mail;
-private String id;
+private String pid;
 private String number;
     public String getAccount(){
-        return account;
+        return acccount;
     }
     public void setAccount(String account){                         
         this.account = account;
     }
+    public String getPuser(){
+        return puser;
+    }
+    
+   public String setPuser(){
+        this.puser = puser;
+   }
     public String getPassword(){
         return password;
     }
@@ -28,11 +35,11 @@ private String number;
     public void setMail(String mail){                         
         this.mail = mail;
     }
-    public String getId(){
-        return id;
+    public String getPid(){
+        return pid;
     }
-    public void setID(String id){                         
-        this.id = id;
+    public void setPid(String pid){                         
+        this.pid = pid;
     }
     public String getNumber(){
         return number;
@@ -40,16 +47,17 @@ private String number;
     public void setNumber(String number){                         
         this.number = number;
     }
-    public Member(String account,String password,String mail
-            ,String id,String number){
+    public Member(String account,String puser,String password,String mail
+            ,String pid,String number){
         super();
-        this.account = account;
+        this.account = acoount;
+        this.puser = puser;
         this.password = password;
         this.mail = mail;
-        this.id = id;
+        this.pid = pid;
         this.number = number;
     }
-    public Member(){
+    public patient(){
         super();
     }
 }
