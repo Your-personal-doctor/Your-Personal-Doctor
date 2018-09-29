@@ -2,7 +2,7 @@ package web;
 /**
  *9/25/2018
  * autor:Ruifeng zhu
- * Memebr class 
+ * Patient class 
  */
 public class Patient{
 private String account;
