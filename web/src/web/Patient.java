@@ -6,6 +6,7 @@ package web;
  */
 public class Patient{
 private String account;
+private String puser;
 private String password;
 private String mail;
 private String pid;
@@ -13,9 +14,9 @@ private String number;
 private String gender;
 private String height;
 private String message;
-private String wight;
+private String weight;
     public String getAccount(){
-        return acccount;
+        return account;
     }
     public void setAccount(String account){                         
         this.account = account;
@@ -64,8 +65,8 @@ private String wight;
         return height;
     }
     
-    public void setHight(){
-        this.hight = hight;
+    public void setHeight(){
+        this.height = height;
     }
     
     public String getMessage(){
@@ -73,7 +74,7 @@ private String wight;
     }
     
     public void setMessage(){
-        this.message
+        this.message = message;
     }
     
     public String getWeight(){
@@ -86,7 +87,7 @@ private String wight;
     public Patient(String account,String puser,String password,String mail
             ,String pid,String number,String gender, String height, String message, String weight){
         super();
-        this.account = acoount;
+        this.account = account;
         this.puser = puser;
         this.password = password;
         this.mail = mail;
@@ -97,7 +98,7 @@ private String wight;
         this.message = message;
         this.weight = weight;
     }
-    public patient(){
+    public Patient(){
         super();
     }
 }
