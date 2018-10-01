@@ -5,16 +5,53 @@ package web;
  * Patient class 
  */
 public class Patient{
-private String account;
-private String puser;
-private String password;
-private String mail;
-private String pid;
-private String number;
-private String gender;
-private String height;
-private String message;
-private String weight;
+
+    private int  pid;
+    private String account;
+    private String puser;
+    private String password;
+    private String mail;
+    private String number;
+    private String gender;
+    private String height;
+    private String message;
+    private String weight;
+    
+    
+    @Override
+	public int hashCode() {
+		
+		int result = 1;
+		result = 31 * result + ((puser == null) ? 0 : puser.hashCode());
+		result = 31 * result + ((password == null) ? 0 : password.hashCode());
+		result = 31 * result + pid;
+		return result;
+	}
+        
+     @Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Patient other = (Patient) obj;
+		if (puser == null) {
+			if (other.puser != null)
+				return false;
+		} else if (!puser.equals(other.puser))
+			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
+		if (pid != other.pid)
+			return false;
+		return true;
+	}
+
     public String getAccount(){
         return account;
     }
@@ -40,10 +77,10 @@ private String weight;
     public void setMail(String mail){                         
         this.mail = mail;
     }
-    public String getPid(){
+    public int getPid(){
         return pid;
     }
-    public void setPid(String pid){                         
+    public void setPid(int pid){                         
         this.pid = pid;
     }
     public String getNumber(){
@@ -85,7 +122,7 @@ private String weight;
         this.weight = weight;
     }
     public Patient(String account,String puser,String password,String mail
-            ,String pid,String number,String gender, String height, String message, String weight){
+            ,int pid,String number,String gender, String height, String message, String weight){
         super();
         this.account = account;
         this.puser = puser;
