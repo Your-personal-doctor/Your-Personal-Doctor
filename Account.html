@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSS/ACC.css">
+<title>Account</title>
+</head>
+<body>
+<div class="mainMenu">		
+	<ul >
+ 	<li><a href="account">Account</a></li>		
+ 	<li><a href="profile">Profile</a></li>	
+ 	<li><a href="payment">Payment</a></li>		
+ 	<li><a href="setting">Setting</a></li>	
+	<div class= "backfromAcc" onclick="window.open('HCC.html')">Back</div>
+	</ul>
+	</div>
+	<div class="Content-Main">        
+	<form  action="" method="post">     
+	<h1>Profile</h1>                       
+	<div class="fileInputContainer">    
+	<input class="fileInput" id="image_uploads" type="file" name="image_uploads" accept="image/*">       
+	</div>         
+	<label>             
+	<span>Your First Name:</span>      
+	<input type="text"  name="name" >    
+	</label>
+	<label>             
+	<span>Your Middle Name:</span>      
+	<input type="text"  name="name" >    
+	</label>  
+	<label>             
+	<span>Your Last Name:</span>      
+	<input type="text"  name="name" >    
+	</label>  
+	<label class="Main-sex">      
+	<span>Your sex:</span>          
+	<input type="checkbox" class="man">male      
+	<input type="checkbox" class="women">female          
+	</label>               
+	<label>                  
+	<span>Your email :</span>      
+	<input type="email" name="email" >      
+	</label>    
+	<label>      
+	<span>Your phone:</span>    
+	<input type="text" name="phone" >     
+	</label>     
+	<label>                
+	<span>Message:</span>       
+	<textarea id="message" name="message" ></textarea>      
+	</label>         
+	<button>Submit</button>
+	</form>  
+	</div>
+
+</body>
+</html>

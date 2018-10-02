@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+*	{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
+				
+.mainMenu{
+	background-color: black;
+	width: 100px;
+	height: 100%;
+	line-height: 50px;
+	position: absolute;
+}
+ul{
+	background: inherit;
+	list-style: none;
+}
+a{
+    color: white;
+	background: inherit;
+	text-decoration: none
+}
+li{ 
+	line-height: 80px;
+	background: inherit;
+	text-align: center;
+}
+.backfromAcc{
+	text-align: center;
+	color: white;
+	background: inherit;
+	width: 100px;
+	bottom: 5%;
+	cursor: pointer; 
+	position: absolute;
+}
+ .Content-Main{   
+	 max-width: 1300px;   
+	 margin: auto;     
+	 border: none;
+	 font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	 text-shadow: 1px 1px 1px gray;    
+	 color: black;     
+	 background:#555;    
+}      
+.Content-Main h1{   
+	padding: 80px 10px 40px 0px;   
+	
+	border-bottom: 2px solid black;     
+}      
+    
+.Content-Main label{      
+	margin: 0px 0px 0px;  
+	display: block;   
+}     
+.fileInputContainer{ 
+	height: 150px;     
+	width: 150px;    
+	margin: 20px 20px 20px 20px ;       
+	background: url(" ../PIC/baby.png"); 
+	overflow: hidden;      
+	position: relative;      
+
+}       
+.fileInput{    
+	height: 106px;   
+	border: dashed;      
+	font-size: 100px; 
+	opacity: 0;        
+	filter:alpha(opacity=0);  
+	cursor: pointer;     
+	position: absolute;   
+}      
+.Content-Main label>span{     
+	width: 20%;     
+	float: left;      
+	text-align: right;      
+	padding-right: 10px;    
+	margin-top: 10px;      
+	font-weight: bold;     
+}       
+.Main-sex{         
+	padding-right: 13px;     
+	padding-bottom: 13px;    
+	font-weight: bold;      
+	line-height: 4px;    
+}      
+.Main-sex input[type=checkbox]{   
+	margin-top:6px;     
+	vertical-align:middle;   
+}      
+.Content-Main input[type="text"], .Content-Main input[type="email"], .Content-Main textarea{      
+	height: 25px;         
+	width: 70%;          
+	line-height: 15px;    
+	padding: 5px 0px 5px 5px;  
+	margin-bottom: 16px;      
+	margin-right: 6px;        
+	margin-top: 2px;         
+	border: none;         
+	border-radius:2px;     
+	webkit-border-radius:2px;    
+	moz-border-radius:2px;      
+	outline: 0 none;          
+	background:  #DFDFDF;   
+	color: #525252;    
+}      
+.Content-Main textarea{  
+	height: 120px;        
+	width: 70%;         
+	padding: 5px 0px 0px 5px; 
+}     
+button{       
+	padding: 8px 24px 8px 24px;  
+	margin-bottom: 8px;      
+	border: none;          
+	border-radius: 6px;         
+	font-weight: bold;           
+	color: white;         
+	background: black;      
+}     
+button:hover{    
+	color:  black;   
+	background-color: #333;     
+}
+
