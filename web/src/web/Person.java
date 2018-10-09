@@ -46,11 +46,11 @@ public class Person {
     public void setPassword(String _password){
         this.passsword = _password;
     }
-     public String getUsertype(){
+     public int getUsertype(){
         return usertype;   
     }
     
-    public void setUsertype(String _usertype){
+    public void setUsertype(int _usertype){
         this.usertype = _usertype;
     } 
     
