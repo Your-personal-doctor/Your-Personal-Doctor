@@ -2,15 +2,15 @@ package web;
 
 
 public class Person {
-    public String uuid;
-    public String username;
-    public String password;
-    public int usertype;
-    public String name;
-    public int age;
-    public int contact;
-    public String email;
-    public boolean gender;
+    private String uuid;
+    private String username;
+    private String password;
+    private int usertype;
+    private String name;
+    private int age;
+    private int contact;
+    private String email;
+    private boolean gender;
     
     public void Person(String _uuid,String _username,String _password,int _usertype,
                        String _name,int _age,int _contact,String _email,boolean _gender){
@@ -70,16 +70,16 @@ public class Person {
         this.age = _age;
     }
     
-     public String getContact(){
+     public int getContact(){
         return contact;
        
     }
-    public void setContact(String _contact){
+    public void setContact(int _contact){
         this.contact = _contact;
     }
     
      public String getEmail(){
-        return eamil;
+        return email;
        
     }
     public void setEmail(String _email){
