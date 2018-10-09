@@ -4,7 +4,7 @@ package web;
  * autor:Ruifeng zhu
  * Patient class 
  */
-public class Patient{
+public class Patient extends Person {
 
     private int  pid;
     private String account;
@@ -13,9 +13,7 @@ public class Patient{
     private String mail;
     private String number;
     private String gender;
-    private String height;
     private String message;
-    private String weight;
     
     
     @Override
@@ -98,14 +96,6 @@ public class Patient{
         this.gender = gender;
     }
     
-    public String getHeight(){
-        return height;
-    }
-    
-    public void setHeight(){
-        this.height = height;
-    }
-    
     public String getMessage(){
         return message;
     }
@@ -114,15 +104,8 @@ public class Patient{
         this.message = message;
     }
     
-    public String getWeight(){
-        return weight;
-    }
-    
-    public void setWeight(){
-        this.weight = weight;
-    }
     public Patient(String account,String puser,String password,String mail
-            ,int pid,String number,String gender, String height, String message, String weight){
+            ,int pid,String number,String gender, String message){
         super();
         this.account = account;
         this.puser = puser;
@@ -131,9 +114,7 @@ public class Patient{
         this.pid = pid;
         this.number = number;
         this.gender = gender;
-        this.height = height;
         this.message = message;
-        this.weight = weight;
     }
     public Patient(){
         super();
