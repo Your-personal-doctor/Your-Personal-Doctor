@@ -85,7 +85,7 @@ public class DatabaseInterface {
         PreparedStatement stmt = null;
         ResultSet rs = null;
         Connection conn;
-        String sql = "insert into user (UUID,username,password,userType) values (?,?,?,?)";
+        String sql = "insert into user (UUID,username,password,userType,name,age,contact,email,gender,banned) values (?,?,?,?,?,?,?,?,?,?)";
         try {
             Class.forName(DRIVER_TYPE);
             // Open a new connection.
@@ -96,6 +96,12 @@ public class DatabaseInterface {
             stmt.setString(2, _user.getUsername());
             stmt.setString(3, _user.getPassword());
             stmt.setInt(4, _user.getUsertype());
+            stmt.setString(5, _user.getName());
+            stmt.setInt(6, _user.getAge());
+            stmt.setInt(7, _user.getContact());
+            stmt.setString(8, _user.getEmail());
+            stmt.setBoolean(9, _user.getGender());
+            stmt.setBoolean(10, _user.getBanned());
             // Saving result to database.
             stmt.executeUpdate();
             conn.close();
@@ -123,7 +129,7 @@ public class DatabaseInterface {
         PreparedStatement stmt = null;
         ResultSet rs = null;
         Connection conn;
-        String sql = "update user set username=? ,password=? where UUID=?";
+        String sql = "update user set username=? ,password=?,userTpye=?,name=?,age=?,contact=?,email=?,gender=? where UUID=?";
         try {
             Class.forName(DRIVER_TYPE);
             // Open a new connection.
@@ -132,7 +138,13 @@ public class DatabaseInterface {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, _user.getUsername());
             stmt.setString(2, _user.getPassword());
-            stmt.setString(3, _user.getUuid());
+            stmt.setInt(3, _user.getUsertype());
+            stmt.setString(4, _user.getName());
+            stmt.setInt(5, _user.getAge());
+            stmt.setInt(6, _user.getContact());
+            stmt.setString(7, _user.getEmail());
+            stmt.setBoolean(8, _user.getGender());
+            stmt.setString(9, _user.getUuid());
             // Saving result to database.
             stmt.executeUpdate();
             conn.close();

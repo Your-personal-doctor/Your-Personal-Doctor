@@ -105,4 +105,12 @@ public class User {
     public void setGender(boolean _gender){
         this.gender = _gender;
     }
+    
+    public boolean getBanned(){
+        return this.banned;
+    }
+    
+    public void setBanned(Boolean _banned){
+        this.banned = _banned;
+    }
 }
