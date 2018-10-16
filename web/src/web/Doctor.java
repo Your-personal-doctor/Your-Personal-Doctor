@@ -1,11 +1,16 @@
 package web;
-
+/**
+* autor: Ruifeng zhu
+* data:10/15/2018
+* it is a moderl for the doctor file create
+*/
 
 public class Doctor extends Person{
     private int docID;
     private String docusername;
     private String docpassword; 
     
+   // as is a person (super() calls the Person constructor).	
     public Doctor(){
             super();
     }
@@ -13,6 +18,7 @@ public class Doctor extends Person{
             return docID;
     }
     
+    // it is a hashcode for the doctor id password confirm
     @Override
         public int hashCode(){
             int hash = 1;
@@ -22,6 +28,7 @@ public class Doctor extends Person{
                     return hash;
     }
     
+   // it is equal model for the test the doctor passwod.
     @Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -43,7 +50,8 @@ public class Doctor extends Person{
 			return false;
 		return true;
 	}
-    public void setdocID(int docID) {
+	// set and get all doctor model
+        public void setdocID(int docID) {
 		this.docID = docID;
 	}
 
@@ -66,7 +74,7 @@ public class Doctor extends Person{
 	
 	@Override
 	public String toString() {
-		return (this.docID+","+docusername+","+docpassword.toString()+","+ firstName + "," + lastName);
+		return (this.docID+","+docusername+","+docpassword.toString()+","+ Name);
 	}
     
 }
