@@ -1,11 +1,12 @@
 package web;
 /**
- *9/25/2018
+ *10/15/2018
  * autor:Ruifeng zhu
  * Patient class 
  */
-public class Patient extends Person {
 
+public class Patient extends Person {
+    //set all rescouce for the patient	
     private int  pid;
     private String account;
     private String puser;
@@ -15,7 +16,7 @@ public class Patient extends Person {
     private String gender;
     private String message;
     
-    
+    // use the hashcode and equals class to confirm the patient id and password
     @Override
 	public int hashCode() {
 		
@@ -49,7 +50,7 @@ public class Patient extends Person {
 			return false;
 		return true;
 	}
-
+    // code for the all rescouce for the patient 
     public String getAccount(){
         return account;
     }
@@ -103,7 +104,7 @@ public class Patient extends Person {
     public void setMessage(){
         this.message = message;
     }
-    
+    // give the difination for the all rescource for the patient model
     public Patient(String account,String puser,String password,String mail
             ,int pid,String number,String gender, String message){
         super();
