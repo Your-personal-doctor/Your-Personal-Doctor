@@ -1,5 +1,9 @@
 package web;
-
+/**
+* autor:Ruifeng zhu
+* data: 10/10/2018 
+* the mdoel for the person to connecet with the sql
+*/
 
 public class Person {
     private String uuid;
