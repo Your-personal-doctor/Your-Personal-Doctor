@@ -16,6 +16,7 @@ public class client {
             //create a scanner of BufferedReader
             BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
             while (true) {
+                //read message from server
                 String messagein = "", messageout = "";
                 messageout = kb.readLine();
                 mesout.writeUTF("User:"+ messageout);
