@@ -8,9 +8,7 @@ public class client {
     public static void main(String[] args) {
         try {
             //create a server for connection
-            String host = "localhost";
-            int port =8080;
-            Socket s = new Socket(host,port);;
+            Socket s = new Socket("localhost", 8080);;
             //read messgage from client
             DataInputStream mesin = new DataInputStream(s.getInputStream());
             //send message to client
