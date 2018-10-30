@@ -12,8 +12,8 @@ public class PatientTable extends AbstractTableModel {
 	/**
 	 * Sets the column names of the patient table to be in a specific format only
 	 */
-	private String[] columnNames = {"Doctor ID", "Doctor Username", "Patient ID", "First Name", "Last Name", "DOB",
-			"Address", "Phone Number", "Billing Cycle", "Medical Condition", "Comments"};
+	private String[] columnNames = {"Doctor ID", "Doctor Username", "Patient ID", "Name", "DOB",
+			"Address", "gender", "Email", "Phone Number", "Medical Condition", "message"};
 	private ArrayList<Patient> patientlist = null;
 	
 	/**
