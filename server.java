@@ -8,7 +8,7 @@ public class server {
     public static void main(String[] args) {
         try {
             //create a server for connection
-            ServerSocket ss = new ServerSocket(1201);
+            ServerSocket ss = new ServerSocket(8080);
             //waiting for connection
             Socket s = ss.accept();
             //read messgage from client
