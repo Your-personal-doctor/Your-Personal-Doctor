@@ -1,5 +1,5 @@
-package server;
 
+package test;
 import java.io.*;
 import java.net.*;
 
@@ -22,17 +22,16 @@ public class server {
                 //read message from client
                 messagein = mesin.readUTF();
                 System.out.println(messagein);
+                //write messages to client
                 messageout = kb.readLine();
-               
                 mesout.writeUTF("Doctor:"+messageout);
-                mesout.flush();
+              
             }
 
             s.close();
 
         } catch (Exception e) {
-
+             e.printStackTrace();
         }
-
     }
-}
+    }
