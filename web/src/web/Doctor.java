@@ -1,9 +1,9 @@
 package web;
+
 /**
-* autor: Ruifeng zhu
-* data:9/30/2018
-* it is a moderl for the doctor file create
-*/
+ *
+ * @author zhuru
+ */
 
 public class Doctor extends Person{
     private int docID;

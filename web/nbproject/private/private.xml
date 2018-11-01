@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/CSC339/web/src/web/Doctor.java</file>
-            <file>file:/F:/CSC339/web/src/web/Person.java</file>
-            <file>file:/F:/CSC339/web/src/web/Member.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/Patientview.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/doctorview.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/Patientcontroller.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/controller.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/doccontroller.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/Doctor.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/Patient.java</file>
+            <file>file:/C:/Users/zhuru/OneDrive/桌面/web/src/web/Massage.java</file>
         </group>
     </open-files>
 </project-private>
